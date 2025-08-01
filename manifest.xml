@@ -1,0 +1,69 @@
+<!-- manifest.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>12345678-1234-1234-1234-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Your Company</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="My Excel Add-in" />
+  <Description DefaultValue="Opens a pane and requests Microsoft login" />
+  <IconUrl DefaultValue="https://yourdomain.com/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://yourdomain.com/assets/icon-64.png" />
+  <SupportUrl DefaultValue="https://yourdomain.com/support" />
+
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://yourdomain.com/taskpane.html" />
+  </DefaultSettings>
+
+  <ExtensionPoint xsi:type="CustomTab">
+    <CustomTab id="MyCustomTab">
+      <Label resid="tabLabel" />
+      <Groups>
+        <Group id="MyCustomGroup">
+          <Label resid="groupLabel" />
+          <Icons>
+            <Icon size="16" resid="icon16" />
+            <Icon size="32" resid="icon32" />
+            <Icon size="80" resid="icon80" />
+          </Icons>
+          <Controls>
+            <Button id="OpenPaneButton">
+              <Label resid="buttonLabel" />
+              <Supertip>
+                <Title resid="buttonLabel" />
+                <Description resid="buttonTooltip" />
+              </Supertip>
+              <Icon resid="icon32" />
+              <Action xsi:type="ShowTaskpane">
+                <SourceLocation resid="taskPaneUrl" />
+              </Action>
+            </Button>
+          </Controls>
+        </Group>
+      </Groups>
+    </CustomTab>
+  </ExtensionPoint>
+
+  <Resources>
+    <bt:Images>
+      <bt:Image id="icon16" DefaultValue="https://yourdomain.com/assets/icon-16.png" />
+      <bt:Image id="icon32" DefaultValue="https://yourdomain.com/assets/icon-32.png" />
+      <bt:Image id="icon80" DefaultValue="https://yourdomain.com/assets/icon-80.png" />
+    </bt:Images>
+    <bt:Urls>
+      <bt:Url id="taskPaneUrl" DefaultValue="https://yourdomain.com/taskpane.html" />
+    </bt:Urls>
+    <bt:ShortStrings>
+      <bt:String id="tabLabel" DefaultValue="My Tab" />
+      <bt:String id="groupLabel" DefaultValue="My Group" />
+      <bt:String id="buttonLabel" DefaultValue="Open Blade" />
+    </bt:ShortStrings>
+    <bt:LongStrings>
+      <bt:String id="buttonTooltip" DefaultValue="Click to open pane and login." />
+    </bt:LongStrings>
+  </Resources>
+</OfficeApp>
