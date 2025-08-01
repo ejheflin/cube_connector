@@ -7,16 +7,16 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="My Excel Add-in" />
   <Description DefaultValue="Opens a pane and requests Microsoft login" />
-  <IconUrl DefaultValue="https://yourdomain.com/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://yourdomain.com/assets/icon-64.png" />
-  <SupportUrl DefaultValue="https://yourdomain.com/support" />
+  <IconUrl DefaultValue="https://statuesque-quokka-f93075.netlify.app/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://statuesque-quokka-f93075.netlify.app/assets/icon-64.png" />
+  <SupportUrl DefaultValue="https://statuesque-quokka-f93075.netlify.app/support" />
 
   <Hosts>
     <Host Name="Workbook" />
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://yourdomain.com/taskpane.html" />
+    <SourceLocation DefaultValue="https://statuesque-quokka-f93075.netlify.app/taskpane.html" />
   </DefaultSettings>
 
   <ExtensionPoint xsi:type="CustomTab">
@@ -50,12 +50,12 @@
 
   <Resources>
     <bt:Images>
-      <bt:Image id="icon16" DefaultValue="https://yourdomain.com/assets/icon-16.png" />
-      <bt:Image id="icon32" DefaultValue="https://yourdomain.com/assets/icon-32.png" />
-      <bt:Image id="icon80" DefaultValue="https://yourdomain.com/assets/icon-80.png" />
+      <bt:Image id="icon16" DefaultValue="https://statuesque-quokka-f93075.netlify.app/assets/icon-16.png" />
+      <bt:Image id="icon32" DefaultValue="https://statuesque-quokka-f93075.netlify.app/assets/icon-32.png" />
+      <bt:Image id="icon80" DefaultValue="https://statuesque-quokka-f93075.netlify.app/assets/icon-80.png" />
     </bt:Images>
     <bt:Urls>
-      <bt:Url id="taskPaneUrl" DefaultValue="https://yourdomain.com/taskpane.html" />
+      <bt:Url id="taskPaneUrl" DefaultValue="https://statuesque-quokka-f93075.netlify.app/taskpane.html" />
     </bt:Urls>
     <bt:ShortStrings>
       <bt:String id="tabLabel" DefaultValue="My Tab" />
